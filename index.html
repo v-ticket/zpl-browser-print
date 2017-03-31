@@ -2,8 +2,15 @@
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 
+    <!-- Zebra -->
     <script type="text/javascript" src="js/BrowserPrint-1.0.4.min.js"></script>
     <script type="text/javascript" src="js/zebra-browser-print.js"></script>
+
+    <!-- QZ -->
+    <script type="text/javascript" src="js/rsvp-3.1.0.min.js"></script>
+    <script type="text/javascript" src="js/sha-256.min.js"></script>
+    <script type="text/javascript" src="js/qz-tray.js"></script>
+    <script type="text/javascript" src="js/qz-browser-print.js"></script>
 </head>
 <body>
     <script>
@@ -53,7 +60,13 @@
     <button type="button"
             class="btn btn-lg btn-primary"
             onclick="printByZebraBrowser(zplString);"
-            value="Print">Print Label
+            value="Print">Print By Zebra
+    </button>
+
+    <button type="button"
+            class="btn btn-lg btn-primary"
+            onclick="printByQZ(zplString);"
+            value="Print">Print By QZ
     </button>
 </body>
 </html>
